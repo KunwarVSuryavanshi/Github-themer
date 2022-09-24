@@ -1,0 +1,22 @@
+body{
+  background-color: rgb(218, 244, 241);
+}
+.wrapper_div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+h2{
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+.header{
+  font-family: 'Source Sans Pro';
+  text-align: center;
+}
+input{
+  cursor: pointer;
+  padding: 0px !important;
+}

@@ -1,25 +1,29 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Github Themer?",
   "version": "0.69",
   "content_scripts": [
     {
       "matches": [
         "https://github.com/*"
-      ], 
+      ],
       "js": [
         "content.js"
-      ] 
+      ]
     }
   ],
   "background": {
-    "scripts": [
-      "background_script.js"
-    ]
+    "service_worker": "background_script.js"
   },
-  "permissions": ["https://github.com/*", "tabs", "storage"],
-  "browser_action": {
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://github.com/*"
+  ],
+  "action": {
     "default_popup": "popup.html",
-    "default_title": "Hey Boy"
+    "default_title": "Dattebayo"
   }
 }

@@ -20,3 +20,9 @@ input{
   cursor: pointer;
   padding: 0px !important;
 }
+.btn_div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
